@@ -1,4 +1,6 @@
-FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+#FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+FROM nvcr.io/nvidia/tensorrt:23.01-py3
+
 
 ENV DEBIAN_FRONTEND=noninteractive PIP_PREFER_BINARY=1 \
         CUDA_HOME=/usr/local/cuda-11.8 TORCH_CUDA_ARCH_LIST="8.6"
